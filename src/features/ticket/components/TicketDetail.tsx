@@ -57,10 +57,10 @@ const TicketDetail: React.FC<TicketDetailProps> = ({ ticketId, isAdmin }) => {
                 <CheckCircle className="w-4 h-4 mr-2" />
                 باز
               </Button>
-              <Button onClick={() => handleStatusChange("in_progress")} variant="outline" className="bg-yellow-500 text-white hover:bg-yellow-600">
+              {/* <Button onClick={() => handleStatusChange("in_progress")} variant="outline" className="bg-yellow-500 text-white hover:bg-yellow-600">
                 <Clock className="w-4 h-4 mr-2" />
                 در حال بررسی
-              </Button>
+              </Button> */}
               <Button onClick={() => handleStatusChange("closed")} variant="outline" className="bg-red-500 text-white hover:bg-red-600">
                 <AlertCircle className="w-4 h-4 mr-2" />
                 بستن
