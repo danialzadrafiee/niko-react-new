@@ -232,7 +232,7 @@ const CategoryList: React.FC = () => {
   const filteredCategories = categories.filter((category) => category.name.toLowerCase().includes(searchTerm.toLowerCase()))
 
   return (
-    <div className="container bg-white rounded-lg mx-auto p-4 rtl">
+    <div className="container bg-white  rounded-lg mx-auto p-4 rtl">
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-2xl font-bold">دسته‌بندی‌ها</h1>
         <Button onClick={openAddCategoryModal}>
