@@ -39,7 +39,7 @@ const Layout: React.FC = () => {
         <Outlet />
       </main>
       <Tabs value={activeTab} onValueChange={handleTabChange} className="fixed bottom-0 left-0 right-0 bg-white border-t z-50 lg:hidden">
-        <TabsList className="grid w-full grid-cols-4">
+        <TabsList className="grid w-full grid-cols-3">
           <TabsTrigger value="home">
             <Home className="h-5 w-5" />
             <span className="sr-only">Home</span>
@@ -52,10 +52,7 @@ const Layout: React.FC = () => {
             <Phone className="h-5 w-5" />
             <span className="sr-only">Contact</span>
           </TabsTrigger>
-          <TabsTrigger value="categories">
-            <Menu className="h-5 w-5" />
-            <span className="sr-only">Categories</span>
-          </TabsTrigger>
+      
         </TabsList>
       </Tabs>
     </div>

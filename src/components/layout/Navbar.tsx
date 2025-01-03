@@ -53,7 +53,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto">
           <div className="flex gap-4 justify-between items-center">
             <div className="flex w-full gap-2 items-center">
-              <a href="http://127.0.0.1:5173" className="cursor-pointer">
+              <a href="https://nekugar.ir" className="cursor-pointer">
                 <img src="/img/logo.svg" alt="Logo" className="h-14 -mb-1" />
               </a>
               {!isMobile && (

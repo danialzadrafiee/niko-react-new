@@ -24,7 +24,7 @@ const ShopSidebar: React.FC<ShopSidebarProps> = ({ categories, handleCategoryCli
       {/* Mobile Menu Button */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="lg:hidden fixed bottom-4 right-4 z-50 bg-[#5432a1] text-white p-3 rounded-full shadow-lg"
+        className="lg:hidden fixed bottom-12 right-4 z-50 bg-[#5432a1] text-white p-3 rounded-full shadow-lg"
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
