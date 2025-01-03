@@ -62,7 +62,6 @@ function App() {
           <Route path="edit" element={<UserProfileEdit />} />
         </Route>
         <Route path="tickets" element={<UserTickets />} />
-
         <Route path="*" element={<NotFound />} />
       </Route>
 

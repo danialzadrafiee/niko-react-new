@@ -5,7 +5,7 @@ import { Outlet, useNavigate } from "react-router-dom"
 import { Toaster } from "react-hot-toast"
 import Navbar from "./Navbar"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Home, FileText, Phone } from "lucide-react"
+import { Home, FileText, Phone, AlignJustify } from "lucide-react"
 
 const Layout: React.FC = () => {
   const [activeTab, setActiveTab] = useState("home")
@@ -24,7 +24,7 @@ const Layout: React.FC = () => {
         navigate("/contact")
         break
       case "categories":
-        navigate("/categories")
+        navigate("/categories/mobile")
         break
       default:
         break
@@ -39,7 +39,7 @@ const Layout: React.FC = () => {
         <Outlet />
       </main>
       <Tabs value={activeTab} onValueChange={handleTabChange} className="fixed bottom-0 left-0 right-0 bg-white border-t z-50 lg:hidden">
-        <TabsList className="grid w-full grid-cols-3">
+        <TabsList className="grid w-full grid-cols-4">
           <TabsTrigger value="home">
             <Home className="h-5 w-5" />
             <span className="sr-only">Home</span>
@@ -52,7 +52,10 @@ const Layout: React.FC = () => {
             <Phone className="h-5 w-5" />
             <span className="sr-only">Contact</span>
           </TabsTrigger>
-      
+          <TabsTrigger value="categories">
+            <AlignJustify className="h-5 w-5" />
+            <span className="sr-only">Categories</span>
+          </TabsTrigger>
         </TabsList>
       </Tabs>
     </div>
