@@ -5,7 +5,7 @@ import { Outlet, useNavigate } from "react-router-dom"
 import { Toaster } from "react-hot-toast"
 import Navbar from "./Navbar"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Home, FileText, Phone, Menu } from "lucide-react"
+import { Home, FileText, Phone } from "lucide-react"
 
 const Layout: React.FC = () => {
   const [activeTab, setActiveTab] = useState("home")
