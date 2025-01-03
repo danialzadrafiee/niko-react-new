@@ -1,0 +1,1 @@
+ssh root@5.34.206.178 "source ~/.nvm/nvm.sh && cd /var/www/react && git pull && pm2 restart 0"

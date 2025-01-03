@@ -30,6 +30,7 @@ export const useTicketStore = create<TicketStore>((set) => ({
     }
   },
   createTicket: async (ticketData) => {
+    console.log(ticketData)
     set({ loading: true, error: null })
     try {
       const newTicket = await ticketService.createTicket(ticketData)
