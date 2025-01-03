@@ -32,7 +32,7 @@ const ShopSidebar: React.FC<ShopSidebarProps> = ({ categories, handleCategoryCli
       {/* Overlay */}
       {isOpen && (
         <div 
-          className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="lg:hidden fixed  inset-0 bg-black bg-opacity-50 z-40"
           onClick={() => setIsOpen(false)}
         />
       )}
@@ -44,7 +44,7 @@ const ShopSidebar: React.FC<ShopSidebarProps> = ({ categories, handleCategoryCli
         w-[280px] lg:w-64 
         bg-white shadow-lg rounded-lg overflow-hidden 
         transition-transform duration-300 ease-in-out
-        z-50 lg:z-auto
+        z-[50] lg:z-auto
         ${isOpen ? 'translate-x-0' : 'translate-x-full lg:translate-x-0'}
       `}>
         <div className="bg-[#5432a1] text-white p-4 flex justify-between items-center">

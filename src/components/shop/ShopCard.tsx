@@ -2,7 +2,7 @@ import React from "react"
 import cn from "classnames"
 import numeral from "numeral"
 import moment from "jalali-moment"
-import { getImageUrl } from '../../utils/env';
+import { getImageUrl } from "../../utils/env"
 
 interface CardProps {
   variant: "fundraise" | "product"
@@ -17,19 +17,10 @@ const Card: React.FC<CardProps> = ({ variant, data }) => {
       <div>
         <header>
           <div className={cn("rounded-t-lg", isRaiseCard ? "fade" : "")}>
-            <img
-              src={getImageUrl(data.picture)}
-              alt={data.title}
-              className={cn(
-                "object-cover w-full rounded-t-lg",
-                isRaiseCard ? "h-[180px] sm:h-[200px] lg:h-[180px]" : "h-[200px] sm:h-[250px] lg:h-[300px]"
-              )}
-            />
+            <img src={getImageUrl(data.picture)} alt={data.title} className={cn("object-cover w-full rounded-t-lg", isRaiseCard ? "h-[180px] sm:h-[200px] lg:h-[180px]" : "h-[200px] sm:h-[250px] lg:h-[300px]")} />
           </div>
         </header>
-        <section className="px-3 sm:px-4 lg:px-6">
-          {isRaiseCard ? <RaiseCardContent data={data} /> : <NormalCardContent data={data} />}
-        </section>
+        <section className="px-3 sm:px-4 lg:px-6">{isRaiseCard ? <RaiseCardContent data={data} /> : <NormalCardContent data={data} />}</section>
       </div>
       {isRaiseCard && <RaiseCardFooter data={data} />}
     </div>
@@ -45,7 +36,9 @@ const RaiseCardContent: React.FC<{ data: any }> = ({ data }) => (
         <span className="text-[#5A30A7] text-xs">{numeral(data.price_collected).format("0,0")}</span>
       </div>
       <div className="order-2 w-full col-span-2">
-        <progress dir="ltr" className="col-span-2 progress progress-primary h-[8px]" value={data.price_collected} max={data.price_total}></progress>
+        <div className="col-span-2 my-2 h-[8px] w-full bg-gray-200 rounded-full">
+          <div className="h-full bg-primary rounded-full mr-auto transition-all duration-300" style={{ width: `${(data.price_collected / data.price_total) * 100}%` }}></div>
+        </div>
       </div>
       <div className="flex order-3 col-span-2 sm:col-span-1mt-2 sm:mt-0">
         <span className="text-xs">مانده :</span>
