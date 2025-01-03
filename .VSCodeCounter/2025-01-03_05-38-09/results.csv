@@ -1,8 +1,0 @@
-"filename", "language", "JSON", "YAML", "comment", "blank", "total"
-"/home/dante/projects/niko/react/components.json", "JSON", 20, 0, 0, 0, 20
-"/home/dante/projects/niko/react/package.json", "JSON", 104, 0, 0, 0, 104
-"/home/dante/projects/niko/react/pnpm-lock.yaml", "YAML", 0, 12858, 0, 3157, 16015
-"/home/dante/projects/niko/react/tsconfig.app.json", "JSON", 33, 0, 0, 0, 33
-"/home/dante/projects/niko/react/tsconfig.json", "JSON", 17, 0, 0, 1, 18
-"/home/dante/projects/niko/react/tsconfig.node.json", "JSON", 20, 0, 0, 3, 23
-"Total", "-", 194, 12858, 0, 3161, 16213
