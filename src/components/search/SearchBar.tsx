@@ -74,7 +74,7 @@ const SearchBar: React.FC = () => {
   const hasResults = searchResults.fundraises.length > 0 || searchResults.products.length > 0
 
   return (
-    <div className="relative w-full max-w-md">
+    <div className="relative w-full max-w-sm">
       <Input {...register("search")} className="h-10 input input-bordered rounded-full w-full pr-10" placeholder="جستجو.." />
       <div className="absolute inset-y-0 right-3 flex items-center">
         <Search size={18} className="text-gray-400" />

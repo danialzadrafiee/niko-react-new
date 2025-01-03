@@ -57,7 +57,7 @@ export default function Navbar() {
                 <img src="/img/logo.svg" alt="Logo" className="h-14 -mb-1" />
               </a>
               {!isMobile && (
-                <div className="flex w-full justify-between gap-6 items-center">
+                <div className="flex w-full  justify-between gap-6 items-center">
                   <MenuBar categories={categories} onCategoryClick={handleCategoryClick} />
                   <SearchBar />
                 </div>
